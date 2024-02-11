@@ -1,51 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>HomePage for IDReplacement</title>
     <style>
-        body {
-            background-image: url('piyupi.jpg');
-            background-repeat: no-repeat;
-            background-size: cover; 
-            background-attachment: fixed; 
-            background-color: rgba(0, 0, 0, 0.5); 
-            background-blend-mode: multiply; 
-        }
-        hr {
-            border: 2px solid gray;
-        }
+      body {
+        background-image: url("piyupi.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 170px; /* Adjust the height of the header */
+        z-index: -1;
+        backdrop-filter: blur(10px);
+      }
+
+      hr {
+        border: 3px solid gray;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 183px; /* Adjust the height of the header */
+        z-index: -1;
+      }
+
+      .request-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: darkcyan;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        top: 690px;
+        right: 1560px;
+      }
     </style>
-</head>
-<body>
-    <br>
-    <center style="color: red; font-size: 65px;">
-        <img src="PUPLogo.png" alt="PUP Logo" style="width: 90px; height: 90px; margin-left: 20px; margin-bottom: -15px;">
-        <span style="-webkit-text-stroke: 2px black;
-        font-family: Arial, sans-serif;">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</span>
-        <br>
+  </head>
+  <body>
+    <div class="header-container">
+      <center style="color: #800202; font-size: 60px">
+        <img
+          src="PUPLogo.png"
+          alt="PUP Logo"
+          style="width: 90px; height: 90px; margin-bottom: -50px"
+        />
+        <br />
+        <span style="-webkit-text-stroke: 1px black; font-family: 'Open Sans'">
+          <span style="font-size: 100px">P</span>OLYTECHNIC
+          <span style="font-size: 100px">U</span>NIVERSITY OF THE
+          <span style="font-size: 100px">P</span>HILIPPINES
+        </span>
+      </center>
+    </div>
+    <hr
+      style="
+        color: gray;
+        font-size: large;
+        font-weight: bold;
+        margin-top: -20px;
+      "
+    />
+    <a href="https://angelonise.github.io/ReqPage/" class="request-button">
+      Request ID Replacement
+    </a>
+    >
+    <br />
+    <br />
+    <center style="color: white; font-size: 75px">
+      <div
+        style="
+          width: 300px;
+          height: 450px;
+          overflow: hidden;
+          border-radius: 20px;
+          float: left;
+          margin-left: 5%;
+        "
+      >
+        <img
+          src="IDlayout.jpg"
+          alt="ID layout"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <span
+        style="
+          position: relative;
+          top: 100px;
+          display: block;
+          -webkit-text-stroke: 2px black;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+        "
+        >Application Form for Replacement of Lost/Stolen ID</span
+      >
     </center>
-    <br>
-    <hr style="color: gray; font-size: large;">
-    <br>
-    <a href="https://angelonise.github.io/ReqPage/"><u style="color: lightskyblue; font-size: 20px;">Request ID Replacement</u></a>
-    <br>
-    <br>    
-    <center style="color: white; font-size: 75px;">
-        <div style="width: 300px; height: 450px; overflow: hidden; border-radius: 20px; float: left; margin-left: 5%;">
-            <img src="IDlayout.jpg" alt="ID layout" style="width: 100%; height: 100%;">
-        </div>
-        <span style="position: relative; top: 100px; display: block; -webkit-text-stroke: 2px black;
-        font-family: Arial, sans-serif;">A Dedicated Application Form Website for 
-            Replacement of Lost/Stolen Identification Card in PUP Sta.mesa</span>
-    </center>
-    <span class="glyphicon glyphicon-collapse-down pointer" title="Hide Footer" onclick="$('#div_footer').hide('slow');" style="float: left; color: gray;"></span>
-    <p>
-        <center>
-            <h1 style="margin-top: 400px; color: white;">© 2023 Polytechnic University of the Philippines</h1>
-            | <a href="http://www.pup.edu.ph/terms/" target="_blank" style="color: red;">Terms of Use</a>
-            | <a href="http://www.pup.edu.ph/privacy/" target="_blank" style="color: red;">Privacy Statement</a>
-        </center>  
+    <span
+      class="glyphicon glyphicon-collapse-down pointer"
+      title="Hide Footer"
+      onclick="$('#div_footer').hide('slow');"
+      style="float: left; font-weight: bold; color: gray"
+    ></span>
+    <p style="margin-top: 500px; margin-left: 30px">
+      <a style="color: white">
+        © 2023 Polytechnic University of the Philippines
+      </a>
+      |
+      <a
+        href="http://www.pup.edu.ph/terms/"
+        target="_blank"
+        style="color: red; font-weight: bold"
+        >Terms of Use</a
+      >
+      |
+      <a
+        href="http://www.pup.edu.ph/privacy/"
+        target="_blank"
+        style="color: red; font-weight: bold"
+        >Privacy Statement</a
+      >
     </p>
-</body>
+  </body>
 </html>
